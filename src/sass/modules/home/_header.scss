@@ -34,6 +34,105 @@ header{
         }
  
 }
+
+
+
+
+
+
+
+
+.modal{
+    display: none;
+    z-index: 1000;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100000; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+  .modal-content {
+    background-color:#29261f;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    height: 40%;
+  }
+  
+  .inputt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+ div{
+    display: flex;
+    align-items: center;
+    gap: 10vh;
+    color: white;
+ }
+ 
+    input{
+        border:1px solid #CDA45E;
+background-color: #29261f;
+    width: 30vw;
+   
+ }
+
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.center{
+    padding-top: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2>input{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #CDA45E;
+    border-radius: 15px;
+    padding: 1vh 5vh;
+}
+
+
+.btn2>input:hover{
+    background-color:#CDA45E ;
+}
+
+
+
+
+
+
+
+
 @media (max-width: 428px) {
     header{
      
