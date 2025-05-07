@@ -44,3 +44,83 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+let all=document.getElementById("all")
+let starters=document.getElementById("starters")
+let salads=document.getElementById("salad")
+let special=document.getElementById("special")
+let lawal=document.getElementById("lawal")
+let tani=document.getElementById("tani")
+let talate=document.getElementById("talate")
+let raba3e=document.getElementById("raba3e")
+let lkamasel=document.getElementById("lkamase")
+let sadase=document.getElementById("sadase")
+let sab3a=document.getElementById("sab3a")
+let tamane=document.getElementById("tamane")
+let tasa3e=document.getElementById("tasa3e")
+all.addEventListener("click",()=>{
+   if ( all.style.color="#CDA45E") {
+      starters.style.color="#d0cecc"
+        salads.style.color="#d0cecc"
+         special.style.color="#d0cecc"
+   }
+    lawal.style.display="block"
+    tani.style.display="block"
+    talate.style.display="block"
+    raba3e.style.display="block"
+    lkamasel.style.display="block"
+    sadase.style.display="block"
+    sab3a.style.display="block"
+    tamane.style.display="block"
+    tasa3e.style.display="block"
+})
+starters.addEventListener("click",()=>{
+    
+    if (  starters.style.color="#CDA45E" ) {
+      all.style.color="#d0cecc"
+          salads.style.color="#d0cecc"
+           special.style.color="#d0cecc"
+     }
+    lawal.style.display="block"
+    tani.style.display="block"
+    talate.style.display="none"
+    raba3e.style.display="none"
+    lkamasel.style.display="none"
+    sadase.style.display="none"
+    sab3a.style.display="none"
+    tamane.style.display="block"
+    tasa3e.style.display="none"
+})
+salads.addEventListener("click",()=>{
+    if (  salads.style.color="#CDA45E" ) {
+        all.style.color="#d0cecc"
+            starters.style.color="#d0cecc"
+             special.style.color="#d0cecc"
+       }
+    lawal.style.display="none"
+    tani.style.display="none"
+    talate.style.display="none"
+    raba3e.style.display="block"
+    lkamasel.style.display="none"
+    sadase.style.display="none"
+    sab3a.style.display="none"
+    tamane.style.display="block"
+    tasa3e.style.display="block"
+})
+special.addEventListener("click",()=>{
+    if (  special.style.color="#CDA45E" ) {
+        all.style.color="#d0cecc"
+            salads.style.color="#d0cecc"
+             starters.style.color="#d0cecc"
+       }
+   
+    lawal.style.display="none"
+    tani.style.display="none"
+    talate.style.display="block"
+    raba3e.style.display="none"
+    lkamasel.style.display="block"
+    sadase.style.display="block"
+    sab3a.style.display="none"
+    tamane.style.display="none"
+    tasa3e.style.display="none"
+})

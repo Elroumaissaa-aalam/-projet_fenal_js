@@ -348,23 +348,24 @@ header .btn1 > button:hover {
   gap: 7vh;
   background-color: rgba(0, 0, 0, 0.9529411765);
 }
-.fleex .div1 {
+
+.div1 {
   display: flex;
   flex-direction: column;
   gap: 1vh;
 }
-.fleex .div1 p {
+.div1 p {
   display: flex;
   gap: 2vh;
   align-items: center;
   color: grey;
   font-size: 3vh;
 }
-.fleex .div1 p span {
+.div1 p span {
   color: #cda45e;
   padding-bottom: 2vh;
 }
-.fleex .div1 h2 {
+.div1 h2 {
   color: #CDA45E;
   font-size: 5vh;
 }
@@ -402,8 +403,64 @@ header .btn1 > button:hover {
 .child1 div:hover span {
   color: black;
 }
-.child1 div:hover h3, .child1 div:hover p {
+.child1 div:hover h3,
+.child1 div:hover p {
   color: black;
+}
+
+.bg-black {
+  background-color: #191815;
+  padding: 5vh;
+}
+
+.flexcenter {
+  display: flex;
+  font-size: 3vh;
+  gap: 5vh;
+  justify-content: center;
+  padding: 5vh;
+  color: #d0cecc;
+}
+
+.flexcenter > a:hover {
+  color: #CDA45E;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  padding: 10vh;
+}
+.grid div div {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+.grid div div h4 {
+  display: flex;
+  font-size: 2.4vh;
+  padding: 5px 10px;
+  align-items: center;
+}
+.grid div div h4 p {
+  background-color: #191815;
+}
+.grid div div h4 p span {
+  background-color: black;
+  color: #CDA45E;
+  padding: 5px 10px;
+}
+.grid div div div {
+  flex-direction: column;
+  align-items: start;
+}
+.grid div div img {
+  width: 5vw;
+  height: 10vh;
+  border-radius: 5vh;
 }
 
 @media (max-width: 428px) {
@@ -445,6 +502,16 @@ header .btn1 > button:hover {
   .img > img {
     top: 100vh;
     width: 80vw;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid div div img {
+    width: 15vw;
+    height: 10vh;
+  }
+  .grid div div div h4 {
+    width: 100%;
   }
 }
 header {
@@ -797,23 +864,24 @@ header .btn1 > button:hover {
   gap: 7vh;
   background-color: rgba(0, 0, 0, 0.9529411765);
 }
-.fleex .div1 {
+
+.div1 {
   display: flex;
   flex-direction: column;
   gap: 1vh;
 }
-.fleex .div1 p {
+.div1 p {
   display: flex;
   gap: 2vh;
   align-items: center;
   color: grey;
   font-size: 3vh;
 }
-.fleex .div1 p span {
+.div1 p span {
   color: #cda45e;
   padding-bottom: 2vh;
 }
-.fleex .div1 h2 {
+.div1 h2 {
   color: #CDA45E;
   font-size: 5vh;
 }
@@ -851,8 +919,64 @@ header .btn1 > button:hover {
 .child1 div:hover span {
   color: black;
 }
-.child1 div:hover h3, .child1 div:hover p {
+.child1 div:hover h3,
+.child1 div:hover p {
   color: black;
+}
+
+.bg-black {
+  background-color: #191815;
+  padding: 5vh;
+}
+
+.flexcenter {
+  display: flex;
+  font-size: 3vh;
+  gap: 5vh;
+  justify-content: center;
+  padding: 5vh;
+  color: #d0cecc;
+}
+
+.flexcenter > a:hover {
+  color: #CDA45E;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  padding: 10vh;
+}
+.grid div div {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+.grid div div h4 {
+  display: flex;
+  font-size: 2.4vh;
+  padding: 5px 10px;
+  align-items: center;
+}
+.grid div div h4 p {
+  background-color: #191815;
+}
+.grid div div h4 p span {
+  background-color: black;
+  color: #CDA45E;
+  padding: 5px 10px;
+}
+.grid div div div {
+  flex-direction: column;
+  align-items: start;
+}
+.grid div div img {
+  width: 5vw;
+  height: 10vh;
+  border-radius: 5vh;
 }
 
 @media (max-width: 428px) {
@@ -894,6 +1018,16 @@ header .btn1 > button:hover {
   .img > img {
     top: 100vh;
     width: 80vw;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid div div img {
+    width: 15vw;
+    height: 10vh;
+  }
+  .grid div div div h4 {
+    width: 100%;
   }
 }
 

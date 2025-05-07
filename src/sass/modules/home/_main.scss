@@ -154,7 +154,7 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-  
+
     align-items: center;
 
 }
@@ -171,10 +171,11 @@
 }
 
 .flex1 {
-   
-h2{
-    font-size: 4vh;
-}
+
+    h2 {
+        font-size: 4vh;
+    }
+
     padding-inline: 10vh;
     position: absolute;
     display: flex;
@@ -188,123 +189,202 @@ h2{
         color: grey;
         width: 80%;
     }
-    div{ 
+
+    div {
         display: flex;
         flex-direction: column;
         gap: 5vh;
-        
-        p{
-        width: 80%;
-        color: #d0cecc;
-    }
 
-    div {
-       
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-       width: 100%;
-        padding-inline: 5vh;
-        p{
+        p {
+            width: 80%;
+            color: #d0cecc;
+        }
+
+        div {
+
             display: flex;
-            align-items: center;
-            gap: 1vh;
-            span{
-                color: #d0cecc;
-            }
-            svg{
-                color: #CDA45E;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            padding-inline: 5vh;
+
+            p {
+                display: flex;
+                align-items: center;
+                gap: 1vh;
+
+                span {
+                    color: #d0cecc;
+                }
+
+                svg {
+                    color: #CDA45E;
+                }
             }
         }
-    }}
-  
+    }
+
 }
 
 .img>img {
     right: 5vh;
-   top: 120vh;
-   border: 2px solid #d0cecc;
-   width: 40vw;
-   position: absolute;
-    
+    top: 120vh;
+    border: 2px solid #d0cecc;
+    width: 40vw;
+    position: absolute;
+
     transition: 0.5s;
 }
-.img>img:hover{
+
+.img>img:hover {
     transform: scale(1.05);
     transition: 0.5s;
 }
 
-.fleex{
-   padding: 10vh;
-   display: flex;
-   flex-direction: column;
-   gap: 7vh;
-   background-color: #000000f3;
-.div1{
+.fleex {
+    padding: 10vh;
     display: flex;
     flex-direction: column;
-    gap:1vh;
-    p{
+    gap: 7vh;
+    background-color: #000000f3;
+
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    p {
         display: flex;
         gap: 2vh;
         align-items: center;
         color: grey;
         font-size: 3vh;
-        span{
+
+        span {
             color: #cda45e;
             padding-bottom: 2vh;
         }
-       }
-       h2{
+    }
+
+    h2 {
         color: #CDA45E;
         font-size: 5vh;
-       }
- }
+    }
 }
-.child1{
+
+.child1 {
     display: flex;
     gap: 5vh;
-  
-    div{
+
+    div {
         background-color: #191815;
         padding: 4vh;
-        
+
         display: flex;
         flex-direction: column;
         gap: 3vh;
         height: 25vh;
-        span{
+
+        span {
             color: #cda45e;
             font-size: 4vh;
         }
-        h3{
+
+        h3 {
             color: white;
             font-size: 3vh;
         }
-        p{
+
+        p {
             font-size: 2.3vh;
             width: 100%;
             color: grey;
         }
+
         transition: 0.7s;
     }
-    div:hover{
+
+    div:hover {
         transition: 0.7s;
         background-color: #CDA45E;
-     span{
-        color: black;
-     }
-     h3,p{
-        color: black;
-     }
+
+        span {
+            color: black;
+        }
+
+        h3,
+        p {
+            color: black;
+        }
     }
 }
 
+.bg-black {
+    background-color: #191815;
+    padding: 5vh;
+}
+
+.flexcenter {
+    display: flex;
+    font-size: 3vh;
+    gap: 5vh;
+    justify-content: center;
+    padding: 5vh;
+    color: #d0cecc;
+}
+
+.flexcenter>a:hover {
+    color: #CDA45E;
+}
 
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    padding: 10vh;
 
-
-
+    div {
+        div{  display: flex;
+            align-items: center;
+            gap: 2vh;
+    
+            h4 {
+                display: flex;
+                
+            font-size: 2.4vh;
+                padding: 5px 10px;
+    
+                p {
+                    background-color: #191815;
+                    span {
+                        background-color: black;
+                        color: #CDA45E;
+                        padding: 5px 10px;
+                    }
+                }
+    
+                align-items: center;
+            }
+    
+            div {
+                flex-direction: column;
+                align-items: start;
+            }
+    
+            img {
+                width: 5vw;
+                height: 10vh;
+                border-radius: 5vh;
+               
+            }
+        }}
+      
+}
 
 
 
@@ -343,33 +423,58 @@ h2{
         justify-content: center;
 
     }
-    .bag{
+
+    .bag {
         flex-direction: column-reverse;
         gap: 10vh;
     }
-    .child1{
+
+    .child1 {
         flex-direction: column;
     }
-    .flex1{
-     
+
+    .flex1 {
+
         width: 100%;
-      
+
         span {
-           
+
             width: 100%;
         }
-       div{
-        p{
-            width: 100%;
+
+        div {
+            p {
+                width: 100%;
+            }
         }
-       }
     }
+
     .img>img {
-    
+
         top: 100vh;
         width: 80vw;
-       
-        
-       
+
+
+
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+        div{
+          
+            div{
+                img{
+                    width: 15vw;
+                    height: 10vh;
+             
+                }
+                div{
+                    h4{
+                  
+                        width: 100%;
+                    }
+                }
+               
+            }
+        }
     }
 }
