@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00000089;
+    padding: 3vh;
+    width: 100%;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 100;
+    nav{
+        display: flex;
+        gap: 3vh;
+        a{
+            font-size: 2.5vh;
+            color: white;
+        }
+        a:hover{
+            color:#CDA45E ;
+        }
+    }
+    label{
+        display: none;
+    }
+  .btn1>button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #CDA45E;
+    border-radius: 15px;
+    padding: 1vh 5vh;
+  }
+      .btn1>button:hover{
+            background-color:#CDA45E ;
+        }
+ 
+}
+@media (max-width: 428px) {
+    header{
+     
+        label{
+            display: block;
+        }
+     
+    nav{
+        
+        left: -500vh;
+        position: fixed;
+        top:10vh;
+        
+        width: 80%;
+        height: 70vh;
+        background-color: #29261f;
+        flex-direction: column;
+        align-items: start;
+     padding: 5vh;
+        justify-content: center;
+        padding-left: 150vh;
+        padding-inline: 4vw ;
+        transition: 0.2s;
+        a{
+            font-size: 4vh;
+            color: white;
+        }
+    }
+    .btn1{
+        display: none;
+    }
+}
+
+}
