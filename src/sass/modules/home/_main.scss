@@ -676,10 +676,72 @@ textarea:focus {
     }
 }
 
+//parte 10
 
-
-
-
+.styl {
+    position: relative;
+    width: 35vw;
+    overflow: hidden;
+    display: flex;
+    padding-inline: 5vh;
+    
+  }
+  .wiit{
+    width: 90%;
+  }
+  .styl img {
+    width: 100%;
+    
+    display: block;
+    
+    transition: transform 0.5s ease;
+  }
+  
+  .hover {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hover:hover::after {
+    opacity: 1;
+  }
+  
+  .styl div:nth-child(2) {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+  }
+  
+  .hover:hover + div {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .styl svg {
+    margin-right: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .styl svg:hover {
+    transform: scale(1.2);
+  }
 
 
 
@@ -895,4 +957,17 @@ textarea:focus {
     .centarinput {
         padding: 1vh;
     }
+    .respo{
+        flex-direction: column;
+    }
+    .respo1{
+        flex-direction: column;
+    
+    }
+    .styl {
+        padding: 0;
+        width: 100%;
+    }
+
+  
 }
