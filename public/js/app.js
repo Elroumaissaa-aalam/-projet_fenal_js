@@ -124,3 +124,56 @@ special.addEventListener("click",()=>{
     tamane.style.display="none"
     tasa3e.style.display="none"
 })
+
+
+
+let modi = document.getElementById("modi")
+let praesentium = document.getElementById("praesentium")
+let pariatur = document.getElementById("pariatur")
+let nostrum = document.getElementById("nostrum")
+let lusti = document.getElementById("lusti")
+let choose= document.getElementById("Choose1")
+let ChooseList = [
+   
+    document.getElementById("Choose2"),
+    document.getElementById("Choose3"),
+    document.getElementById("Choose4"),
+    document.getElementById("Choose5")
+];
+
+
+function hideAll() {
+    ChooseList.forEach(el => el.style.display = "none")
+}
+ choose.style.display = "flex"
+
+modi.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    choose.style.display = "flex"
+});
+
+praesentium.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    ChooseList[0].style.display = "flex"
+     choose.style.display = "none"
+});
+
+pariatur.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    ChooseList[1].style.display = "flex"
+});
+
+nostrum.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    ChooseList[2].style.display = "flex"
+});
+
+lusti.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    ChooseList[3].style.display = "flex"
+});
