@@ -1,5 +1,5 @@
 * {
-    margin: 0 ;
+    margin: 0 !important;
     padding: 0;
     text-decoration: none !important;
     font-family: var(--heading-font);
@@ -479,7 +479,33 @@
 
 
 
+#ffllex {
+    display: none;
+    z-index: 10000;
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: 0.2s;
+    overflow: hidden;
+}
 
+#ffllex iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#ffllex span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
 
 //parte 6
 
@@ -744,7 +770,23 @@ textarea:focus {
   }
 
 
-
+.griide{
+    background-color: #000;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1vh;
+    img{
+     
+        width: calc(199vh/4);
+        
+    }
+    img:hover{
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
+    .photo{
+        height: 100%;
+    }
+}
 
 
 
@@ -968,6 +1010,11 @@ textarea:focus {
         padding: 0;
         width: 100%;
     }
-
+    .griide{
+        grid-template-columns: repeat(1,1fr);
+        img{
+            width: 99%;
+        }
+    }
   
 }

@@ -77,7 +77,9 @@ border: none;
 @media (max-width: 428px) {
     #footer{
         padding: 0;
-       
+       p{
+        padding: 0;
+       }
       div{
         gap: 2vh;
       }
