@@ -177,3 +177,93 @@ lusti.addEventListener("click", (e) => {
     hideAll()
     ChooseList[3].style.display = "flex"
 });
+// part 6
+let nextBtns = document.querySelectorAll(".next-btn")
+let previousBtns = document.querySelectorAll(".previous-btn")
+let containers = document.querySelectorAll(".carousel-container")
+
+let slide = document.getElementById("slid")
+let slide1 = document.getElementById("slid1")
+let slide2 = document.getElementById("slid2")
+let carouselIndexes = new Map()
+
+            
+
+
+nextBtns.forEach(btn => {
+
+
+    btn.addEventListener("click", (e) => {
+
+       
+
+    
+    let target = e.target.getAttribute("carousel-target") 
+      
+    let targetID = carouselIndexes.get(target) || 0 
+
+    slider(targetID + 1, target)
+
+
+      
+        
+
+    })
+});
+
+previousBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+
+        let target = e.target.getAttribute("carousel-target")
+ 
+        let targetID = carouselIndexes.get(target) || 0
+
+        slider(targetID - 1, target)
+    })
+});
+
+
+
+const slider = (index, target) => {
+
+
+    containers.forEach(container => {
+        if (container.id == target) {
+
+            let camera = container.querySelector(".carousel")
+            let slide = container.querySelectorAll(".slide")
+            let slideWidth = slide[0].clientWidth
+
+            if (index < 0) {
+                index = slide.length - 1
+            } else if (index >= slide.length) {
+                index = 0
+            }
+
+            camera.style.transform = `translateX(-${slideWidth * index}px)`
+
+            carouselIndexes.set(target, index)
+
+
+        }
+    });
+
+}
+
+
+containers.forEach(container => {
+
+
+    if (container.getAttribute("autoslide")) {
+
+        
+        let targetID = carouselIndexes.get(container.id) || 0
+
+
+        setInterval(() => {
+            slider(targetID + 1, container.id)
+
+        }, 5000);
+
+    }
+});

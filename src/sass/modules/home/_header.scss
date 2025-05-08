@@ -133,9 +133,15 @@ background-color: #29261f;
 
 
 
-@media (max-width: 428px) {
+@media (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
     header{
-     
+  
+   
+   
         label{
             display: block;
         }
@@ -146,7 +152,7 @@ background-color: #29261f;
         position: fixed;
         top:10vh;
         
-        width: 80%;
+        width: 50%;
         height: 70vh;
         background-color: #29261f;
         flex-direction: column;
