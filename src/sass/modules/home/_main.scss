@@ -1044,22 +1044,10 @@ textarea:focus {
 
 .body4 {
     background-color: #000;
-    margin: 0;
-    font-family: sans-serif;
+    padding: 25vh 5vh;
   }
   
-  .parent4 h4 {
-   
-    color: gray;
-    padding: 0 40px;
-    margin: 0;
-  }
-  
-  .parent4 h1 {
-    color: #b2914a;
-    padding: 0 40px;
-    margin: 0;
-  }
+
   
   #caro2 {
     display: flex;
@@ -1080,10 +1068,14 @@ textarea:focus {
   .areey {
     background-color: #111;
     padding: 20px 30px;
+    height: 30vh;
     border-radius: 8px;
     position: relative;
     font-style: italic;
     color: #ccc;
+    p{
+        font-size: 3.2vh;
+    }
   }
   
   .lbadya {
@@ -1107,7 +1099,7 @@ textarea:focus {
   .profile {
     margin-top: 20px;
     display: flex;
-    align-items: center;
+  align-items: center;
   }
   
   .profile img {
