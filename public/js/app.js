@@ -215,26 +215,26 @@ let carouselIndexes = new Map()
 nextBtns.forEach(btn => {
 
 
-    btn.addEventListener("click", (e) => {
+btn.addEventListener("click", (e) => {
 
 
 
 
-        let target = e.target.getAttribute("carousel-target")
+    let target = e.target.getAttribute("carousel-target")
 
-        let targetID = carouselIndexes.get(target) || 0
+    let targetID = carouselIndexes.get(target) || 0
 
-        slider(targetID + 1, target)
-
-
+    slider(targetID + 1, target)
 
 
 
-    })
+
+
+})
 });
 
 previousBtns.forEach(btn => {
-    btn.addEventListener("click", (e) => {
+btn.addEventListener("click", (e) => {
 
         let target = e.target.getAttribute("carousel-target")
 
@@ -285,7 +285,41 @@ containers.forEach(container => {
         setInterval(() => {
             slider(targetID + 1, container.id)
 
-        }, 5000);
+        }, 3000);
 
     }
 });
+
+
+
+//parte 8
+let currentcaro = 0;
+let slides2 = document.querySelectorAll('.testimonial-card');
+let slidesToShow = 3;
+
+function showSlides(startIndex) {
+   slides2.forEach((slide, i) => {
+      slide.style.display = (i >= startIndex && i < startIndex + slidesToShow) ? 'block' : 'none';
+   });
+}
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+   currentcaro = (currentcaro + 1) % slides2.length;
+   if (currentcaro + slidesToShow > slides2.length) currentcaro = 0;
+   showSlides(currentcaro);
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+   currentcaro = (currentcaro - 1 + slides2.length) % slides2.length;
+   if (currentcaro < 0) currentcaro = slides2.length - slidesToShow;
+   showSlides(currentcaro);
+});
+
+setInterval(() => {
+   currentcaro = (currentcaro + 1) % slides2.length;
+   if (currentcaro + slidesToShow > slides2.length) currentcaro = 0;
+   showSlides(currentcaro);
+}, 3000);
+
+
+showSlides(currentcaro);
